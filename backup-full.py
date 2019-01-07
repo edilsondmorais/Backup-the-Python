@@ -13,13 +13,13 @@ path_destino = "/home/edilson/BACKUP/"
 excluir_do_bkp = "nohup.out"
 
 # variavel usada para politica de retencao
-destino_backup = '/home/edilson/BACKUP/'
 dias_retencao = 3
-
 remover_ate_mes = 4 # Buscar e remover backups ate esta quantidades de mes anterior
 
 ## NAO E NESCESSARIO ALTERAR NADA DESTE PONTO EM DIANTE
 #######################################################
+destino_backup = path_destino
+
 
 #Essa função gera um banner com a hora inicial do Backup
 def inicio(horaInicio):
