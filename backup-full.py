@@ -126,7 +126,7 @@ def remover_backup(arq):
     os.remove(arq)
     retorno = "%s Arquivo %s  removido com sucesso\n" % (inicio_evento, arq)
     l = open(pathlog, 'a')
-    l.write(retorno)
+    l.writelines(retorno)
     l.close()
 
 
@@ -212,7 +212,7 @@ def backupfull():
     diaInicio   = (time.strftime("%d-%m-%Y"))
     final       = termino(diaInicio, horaInicio, caminho_backup, pathlog)
     r           = open(pathlog, 'w')
-    r.write(final)
+    r.writelines(final)
     r.close()
 
     clean()
