@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+__autor__= "Edilson S.M <edilsondmorais@yahoo.com.br"
 #backup-full.py
 
 import subprocess
